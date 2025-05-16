@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
+            Nome = new TextBox();
             label1 = new Label();
-            listBox1 = new ListBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            listBox2 = new ListBox();
+            Produtos = new ListBox();
+            Addq = new Button();
+            Sub = new Button();
+            Adicionar = new Button();
+            Remover = new Button();
+            Editar = new Button();
+            Forma_Pagamento = new ListBox();
             label2 = new Label();
-            checkBox1 = new CheckBox();
-            checkBox2 = new CheckBox();
+            Local = new CheckBox();
+            Viagem = new CheckBox();
             SuspendLayout();
             // 
-            // textBox1
+            // Nome
             // 
-            textBox1.Location = new Point(92, 78);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(315, 23);
-            textBox1.TabIndex = 0;
-            textBox1.TextChanged += textBox1_TextChanged;
+            Nome.Location = new Point(92, 78);
+            Nome.Name = "Nome";
+            Nome.Size = new Size(315, 23);
+            Nome.TabIndex = 0;
+            Nome.TextChanged += textBox1_TextChanged;
             // 
             // label1
             // 
@@ -59,69 +59,70 @@
             label1.TabIndex = 1;
             label1.Text = "Nome";
             // 
-            // listBox1
+            // Produtos
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(93, 119);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(310, 259);
-            listBox1.TabIndex = 2;
-            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
+            Produtos.FormattingEnabled = true;
+            Produtos.ItemHeight = 15;
+            Produtos.Location = new Point(93, 119);
+            Produtos.Name = "Produtos";
+            Produtos.Size = new Size(310, 259);
+            Produtos.TabIndex = 2;
+            Produtos.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
-            // button1
+            // Addq
             // 
-            button1.Location = new Point(490, 127);
-            button1.Name = "button1";
-            button1.Size = new Size(37, 33);
-            button1.TabIndex = 3;
-            button1.Text = "+";
-            button1.UseVisualStyleBackColor = true;
+            Addq.Location = new Point(490, 127);
+            Addq.Name = "Addq";
+            Addq.Size = new Size(37, 33);
+            Addq.TabIndex = 3;
+            Addq.Text = " +";
+            Addq.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // Sub
             // 
-            button2.Location = new Point(422, 127);
-            button2.Name = "button2";
-            button2.Size = new Size(45, 33);
-            button2.TabIndex = 4;
-            button2.Text = "-";
-            button2.UseVisualStyleBackColor = true;
+            Sub.Location = new Point(422, 127);
+            Sub.Name = "Sub";
+            Sub.Size = new Size(45, 33);
+            Sub.TabIndex = 4;
+            Sub.Text = "-";
+            Sub.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // Adicionar
             // 
-            button3.Location = new Point(428, 191);
-            button3.Name = "button3";
-            button3.Size = new Size(104, 36);
-            button3.TabIndex = 5;
-            button3.Text = "Adicionar";
-            button3.UseVisualStyleBackColor = true;
+            Adicionar.Location = new Point(428, 191);
+            Adicionar.Name = "Adicionar";
+            Adicionar.Size = new Size(104, 36);
+            Adicionar.TabIndex = 5;
+            Adicionar.Text = "Adicionar";
+            Adicionar.UseVisualStyleBackColor = true;
+            Adicionar.Click += button3_Click;
             // 
-            // button4
+            // Remover
             // 
-            button4.Location = new Point(428, 246);
-            button4.Name = "button4";
-            button4.Size = new Size(104, 32);
-            button4.TabIndex = 6;
-            button4.Text = "Remover";
-            button4.UseVisualStyleBackColor = true;
+            Remover.Location = new Point(428, 246);
+            Remover.Name = "Remover";
+            Remover.Size = new Size(104, 32);
+            Remover.TabIndex = 6;
+            Remover.Text = "Remover";
+            Remover.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // Editar
             // 
-            button5.Location = new Point(428, 305);
-            button5.Name = "button5";
-            button5.Size = new Size(104, 30);
-            button5.TabIndex = 7;
-            button5.Text = "Editar";
-            button5.UseVisualStyleBackColor = true;
+            Editar.Location = new Point(428, 305);
+            Editar.Name = "Editar";
+            Editar.Size = new Size(104, 30);
+            Editar.TabIndex = 7;
+            Editar.Text = "Editar";
+            Editar.UseVisualStyleBackColor = true;
             // 
-            // listBox2
+            // Forma_Pagamento
             // 
-            listBox2.FormattingEnabled = true;
-            listBox2.ItemHeight = 15;
-            listBox2.Location = new Point(734, 119);
-            listBox2.Name = "listBox2";
-            listBox2.Size = new Size(207, 259);
-            listBox2.TabIndex = 8;
+            Forma_Pagamento.FormattingEnabled = true;
+            Forma_Pagamento.ItemHeight = 15;
+            Forma_Pagamento.Location = new Point(734, 119);
+            Forma_Pagamento.Name = "Forma_Pagamento";
+            Forma_Pagamento.Size = new Size(207, 259);
+            Forma_Pagamento.TabIndex = 8;
             // 
             // label2
             // 
@@ -132,43 +133,43 @@
             label2.TabIndex = 9;
             label2.Text = "Selecione a forma de Pagamento";
             // 
-            // checkBox1
+            // Local
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(1020, 119);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(82, 19);
-            checkBox1.TabIndex = 10;
-            checkBox1.Text = "checkBox1";
-            checkBox1.UseVisualStyleBackColor = true;
+            Local.AutoSize = true;
+            Local.Location = new Point(1020, 119);
+            Local.Name = "Local";
+            Local.Size = new Size(110, 19);
+            Local.TabIndex = 10;
+            Local.Text = "Comer no Local";
+            Local.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // Viagem
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(1020, 154);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(82, 19);
-            checkBox2.TabIndex = 11;
-            checkBox2.Text = "checkBox2";
-            checkBox2.UseVisualStyleBackColor = true;
+            Viagem.AutoSize = true;
+            Viagem.Location = new Point(1020, 154);
+            Viagem.Name = "Viagem";
+            Viagem.Size = new Size(122, 19);
+            Viagem.TabIndex = 11;
+            Viagem.Text = "Levar para viagem";
+            Viagem.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1278, 626);
-            Controls.Add(checkBox2);
-            Controls.Add(checkBox1);
+            Controls.Add(Viagem);
+            Controls.Add(Local);
             Controls.Add(label2);
-            Controls.Add(listBox2);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(listBox1);
+            Controls.Add(Forma_Pagamento);
+            Controls.Add(Editar);
+            Controls.Add(Remover);
+            Controls.Add(Adicionar);
+            Controls.Add(Sub);
+            Controls.Add(Addq);
+            Controls.Add(Produtos);
             Controls.Add(label1);
-            Controls.Add(textBox1);
+            Controls.Add(Nome);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -177,17 +178,17 @@
 
         #endregion
 
-        private TextBox textBox1;
+        private TextBox Nome;
         private Label label1;
-        private ListBox listBox1;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private ListBox listBox2;
+        private ListBox Produtos;
+        private Button Addq;
+        private Button Sub;
+        private Button Adicionar;
+        private Button Remover;
+        private Button Editar;
+        private ListBox Forma_Pagamento;
         private Label label2;
-        private CheckBox checkBox1;
-        private CheckBox checkBox2;
+        private CheckBox Local;
+        private CheckBox Viagem;
     }
 }
